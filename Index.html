@@ -1,0 +1,27 @@
+<!-- use angularjs -->
+<html ng-app>
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body >
+        <!-- select box for elect different lenguages -->
+        <select  ng-model="myVar" ng-init="myVar = 'it'">
+                <option value="it"  >Italiano</option>
+                <option value="eng">English</option>
+</select> 
+
+<!-- visualization div according to the chosen language -->
+<div ng-if="myVar=='eng'">
+<h1>Welcome</h1>
+<p>Welcome to my home.</p>
+<hr>
+</div>
+
+<div ng-if="myVar=='it'">
+<h1>Ciao</h1>
+<p>Benvenuti sulla mia pagina</p>
+<hr>
+</div>
+ 
+</body>
+</html>
